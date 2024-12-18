@@ -14,7 +14,7 @@ import {
 import { clearCart } from '../slices/cart';
 
 // API Base URL
-const API_URL = process.env.REACT_APP_API_URL;
+const API_URL = 'https://grt1n8bzze.execute-api.us-east-2.amazonaws.com/latest/api';
 
 // User Login
 export const login = (email, password) => async (dispatch) => {
