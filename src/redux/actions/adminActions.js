@@ -11,7 +11,7 @@ import {
 	orderDelete,
 } from '../slices/admin';
 
-const API_URL = process.env.REACT_APP_API_URL;
+const API_URL = 'https://grt1n8bzze.execute-api.us-east-2.amazonaws.com/latest/api';;
 
 
 export const getAllUsers = () => async (dispatch, getState) => {
@@ -23,7 +23,7 @@ export const getAllUsers = () => async (dispatch, getState) => {
 	const config = { headers: { Authorization: `Bearer ${userInfo.token}`, 'Content-Type': 'application/json' } };
 
 	try {
-		const { data } = await axios.get('api/users', config);
+		const { data } = await axios.get(`${API_URL}/users`, config);
 		dispatch(getUsers(data));
 	} catch (error) {
 		setError(

@@ -2,7 +2,7 @@ import axios from 'axios';
 import { setError, setLoading, setShippingCosts, cartItemAdd, cartItemRemoval, clearCart } from '../slices/cart';
 
 // Get the base URL from environment variables
-const API_URL = process.env.REACT_APP_API_URL;
+const API_URL =  'https://grt1n8bzze.execute-api.us-east-2.amazonaws.com/latest/api';;
 
 export const addCartItem = (id, qty) => async (dispatch) => {
     dispatch(setLoading(true));

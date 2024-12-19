@@ -11,7 +11,7 @@ import {
 } from '../slices/product';
 import axios from 'axios';
 
-const API_URL = 'https://29auhcqnqe.execute-api.us-east-2.amazonaws.com/api'; // Hardcoded API URL
+const API_URL = 'https://grt1n8bzze.execute-api.us-east-2.amazonaws.com/latest/api'; // Hardcoded API URL
 const DEFAULT_ERROR_MESSAGE = 'An unexpected error has occurred. Please try again later.';
 
 // Get Products with Pagination
