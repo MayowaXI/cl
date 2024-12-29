@@ -24,8 +24,7 @@ import {
 		alignItems="center"
 	  >
 		<Box
-		  width={{ lg: 'sm' }}
-		  transform={{ base: 'translateY(-50%)', lg: 'none' }}
+		  width={{ lg: 'sm' }}		
 		  bg={mode('cyan.50', 'gray.700')}
 		  mx={{ base: '4', md: '8', lg: '0' }}
 		  px={{ base: '4', md: '8', lg: '0' }}
