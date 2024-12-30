@@ -57,6 +57,8 @@ export const register = (fullName, email, password) => async (dispatch) => {
       config
     );
 
+	console.log('Registration response:', data);
+
     dispatch(setServerResponseMsg(data.message || 'Registration successful! Please verify your email.'));
   } catch (error) {
     dispatch(setError(error.response?.data?.message || 'Registration failed. Please try again.'));
